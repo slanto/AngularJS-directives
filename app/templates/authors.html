@@ -1,0 +1,16 @@
+<div>
+    <div class="row">
+        <div class="col-md-3">Name</div>
+        <div class="col-md-3">Nationality</div>
+        <div class="col-md-3">Dates</div>
+        <div class="col-md-3"></div>
+    </div>
+    <div class="row" ng-repeat="author in data">
+        <div class="col-md-3">{{author.name}}</div>
+        <div class="col-md-3">{{author.nationality}}</div>
+        <div class="col-md-3">{{author.dates}}</div>
+        <div class="col-md-3">
+            <input type="button" class="btn btn-default" value="Details" ng-click="vm.details(author)" />
+        </div>
+    </div>
+</div>
